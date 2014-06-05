@@ -1,4 +1,4 @@
-CodecademyUpdateShared
+CodecademyRedesign-Shared
 ======================
 
 Contribute to this to improve Codecademy.
