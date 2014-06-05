@@ -1,0 +1,37 @@
+/*  This pulls the whole extension together and tells each js script where it can run etc. */
+
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 2,
+
+	"name": "Codecademy Group Redesign",
+	"description": "Redesigns the look of Codecademy Groups, fixes a handful of bugs and adds the group-feed back in.",
+	"version": "3.0.0",
+	
+	"icons": { 
+		"16": "icon_16.png",
+		"48": "icon_48.png",
+		"128": "icon_128.png" 
+	},
+
+	"permissions": [
+		"http://codecademy.com/"
+	],
+
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "jquery.min.js", "updater.js" ],
+		"matches": [ "http://www.codecademy.com/groups/*", "https://www.codecademy.com/groups/*" ]
+	},
+	{
+		"all_frames": true,
+		"js": [ "jquery.min.js", "activity.js" ],
+		"matches": [ "http://www.codecademy.com/dashboard/groups", "https://www.codecademy.com/dashboard/groups" ]
+	},
+	{
+		"all_frames": true,
+		"js": [ "jquery.min.js", "groupFeed.js" ],
+		"matches": [ "http://www.codecademy.com/*", "https://www.codecademy.com/*" ]
+	}	]
+}
