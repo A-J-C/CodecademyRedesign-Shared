@@ -12,4 +12,7 @@ Push any new files into the **shared** branch and I will merge them up to the ma
 Thanks,
 Alex C
 
-This repo is for personal use and so isn't set-up for someone forking the code, however if interested please contact me at alexcraig.linkedin@gmail.com
+## Update
+This project is no longer being maintained, due to Codecademy moving onto a new platform.
+
+This repo is outdated and so is now for personal use and isn't set-up for someone forking the code, however if interested please contact me at alexcraig.linkedin@gmail.com
